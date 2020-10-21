@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-image: url('../img/banner-2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 20px;
+    text-align: center;
+    color: black;
+    font-size: 45px;
+}
+
+#section1 {
+    font-size: 40px;
+}
+
+#section2 {
+    background-color: #28ECA5;
+}
+
+#section2 h1 {
+    font-size: 50px;
+}
+
+#section3 {
+    font-size: 40px;
+}
+
+#section5 {
+    background-color: #46A6FC;
+    font-size: 35px;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    padding: 0px 0px 0px 10px;
+}
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 20px 20%;
+    text-align: center;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+}
+
+.two-column img {
+    width: 100%;
+}
+
+.four-column {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.four-column img {
+    width: 100%;
+    align-content: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
