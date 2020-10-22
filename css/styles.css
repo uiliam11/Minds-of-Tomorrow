@@ -7,6 +7,12 @@ body {
     margin: 0;
 }
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .header {
     background-image: url('../img/banner-2.jpg');
     background-size: cover;
@@ -26,7 +32,7 @@ body {
 }
 
 #section2 h1 {
-    font-size: 50px;
+    font-size: 6vw;
 }
 
 #section3 {
@@ -35,7 +41,10 @@ body {
 
 #section5 {
     background-color: #46A6FC;
-    font-size: 35px;
+}
+
+#section5 h1 {
+    font-size: 4vw;
 }
 
 #footer {
@@ -51,6 +60,10 @@ body {
     text-align: center;
 }
 
+.one-column h1 {
+    font-size: 6vw;
+}
+
 .two-column {
     float: left;
     width: 50%;
@@ -60,10 +73,20 @@ body {
     width: 100%;
 }
 
+.two-column h1 {
+    font-size: 6vw;
+}
+
+.two-column p {
+    font-size: 3vw;
+}
+
 .four-column {
+    padding: 10px;
     float: left;
     width: 25%;
     text-align: center;
+    font-size: 30px;
 }
 
 .four-column img {
@@ -71,8 +94,28 @@ body {
     align-content: center;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.four-column .desc {
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+    align-content: center;
+    height: auto;
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.four-column p {
+    font-size: 2vw;
+}
+
+@media screen and (max-width:700px) {
+    .header,
+    .one-column,
+    .two-column {
+        width: 100%;
+    }
+    .four-column {
+        width: 50%;
+    }
 }
